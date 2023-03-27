@@ -40,7 +40,7 @@ class ImageDownloaderPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
         @JvmStatic
         fun registerWith(registrar: Registrar) {
             val activity = registrar.activity() ?: return
-            val context = registrar.context() ?: return
+            val context = registrar.context()
             val applicationContext = context.applicationContext
             val pluginInstance = ImageDownloaderPlugin()
             pluginInstance.setup(

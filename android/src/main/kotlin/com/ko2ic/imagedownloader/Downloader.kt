@@ -75,8 +75,7 @@ class Downloader(private val context: Context, private val request: Request) {
 
                     onNext(
                         DownloadStatus.Running(
-                            createRequestResult(nullableDownloadId, cursor),
-                            progress.toInt()
+                            createRequestResult(nullableDownloadId, cursor), progress.toInt()
                         )
                     )
 
